@@ -89,7 +89,7 @@ export function HeroSection() {
                 <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
               </button>
               <a
-                href="https://wa.me/917488574616?text=Hi,%20I%20want%20to%20know%20more%20about%20Happy%20Ka%20Khana%20tiffin%2520subscriptions."
+                href="https://wa.me/917488574616?text=Hello%20Happy%20Ka%20Khana!%20I%20am%20interested%20in%20subscribing%20to%20your%20tiffin%20service.%20Please%20share%20details."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-7 py-3.5 bg-white border-2 border-gray-200 text-text-primary text-base font-bold font-heading rounded-xl hover:border-brand-secondary hover:text-brand-secondary hover:bg-brand-secondary-light/10 transition-all duration-200 active:scale-95 text-center"

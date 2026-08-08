@@ -60,7 +60,7 @@ export function DeliveryAreas() {
                     setResult({ status: "idle", message: "" });
                   }}
                   placeholder="Enter 6-digit Patna pincode (e.g. 800001)"
-                  className="w-full pl-4 pr-10 py-3 bg-white border-2 border-gray-200 rounded-xl font-body text-sm text-text-primary focus:outline-none focus:border-brand-secondary transition-all"
+                  className="w-full pl-4 pr-10 py-3 bg-white border-2 border-gray-200 rounded-xl font-body text-base text-text-primary focus:outline-none focus:border-brand-secondary transition-all"
                 />
                 <div className="absolute right-3 top-1/2 -translate-y-1/2 text-text-light">
                   <MapPin className="h-5 w-5 text-brand-primary" />
@@ -128,7 +128,7 @@ export function DeliveryAreas() {
           <p className="text-xs text-text-light font-body text-center mt-6">
             💡 Don&apos;t see your area? Drop us a{" "}
             <a
-              href="https://wa.me/917488574616?text=Hi,%20I%20don&apos;t%20see%20my%20area%20listed%20on%20the%20website.%20Do%20you%20deliver%20here?"
+              href="https://wa.me/917488574616?text=Hello%20Happy%20Ka%20Khana!%20My%20area%20is%20not%20listed%20on%20the%20website.%20Do%20you%20deliver%20to%20my%20location?"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-primary font-bold hover:underline transition-all"
