@@ -119,7 +119,7 @@ export function HeroSection() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs text-text-secondary font-body">
-                    Loved by 500+ customers in Patna
+                    Trusted by families & students across Patna
                   </span>
                   <div className="flex items-center gap-1">
                     {[1, 2, 3, 4, 5].map((s) => (

@@ -18,7 +18,7 @@ export function HowItWorks() {
       icon: MapPin,
       stepNum: "02",
       title: "Set Delivery Details",
-      desc: "Provide your location and choose preferred timings for lunch or dinner. You can pause or adjust anytime.",
+      desc: "Share your delivery address and we'll confirm if your area is covered. Lunch & Dinner timings are fixed.",
     },
     {
       icon: Sparkles,
