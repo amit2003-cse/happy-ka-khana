@@ -1,6 +1,5 @@
 import { Navbar } from "@/features/landing/components/Navbar";
 import { HeroSection } from "@/features/landing/components/HeroSection";
-import { HowItWorks } from "@/features/landing/components/HowItWorks";
 import { WeeklyMenu } from "@/features/landing/components/WeeklyMenu";
 import { PricingPlans } from "@/features/landing/components/PricingPlans";
 import { WhyChooseUs } from "@/features/landing/components/WhyChooseUs";
@@ -18,7 +17,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
-        <HowItWorks />
         <WeeklyMenu />
         <PricingPlans />
         <WhyChooseUs />
