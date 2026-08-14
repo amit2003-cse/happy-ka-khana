@@ -2,12 +2,12 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
-import { Home, HelpCircle, Tag, MessageSquareText, Phone } from "lucide-react";
+import { Home, HelpCircle, Tag, UtensilsCrossed, Phone } from "lucide-react";
 
 const navItems = [
   { label: "Home", icon: Home, href: "#", sectionId: null },
+  { label: "Menu", icon: UtensilsCrossed, href: "#menu", sectionId: "menu" },
   { label: "Plans", icon: Tag, href: "#pricing", sectionId: "pricing" },
-  { label: "Reviews", icon: MessageSquareText, href: "#reviews", sectionId: "reviews" },
   { label: "FAQs", icon: HelpCircle, href: "#faqs", sectionId: "faqs" },
   { label: "Contact", icon: Phone, href: "#contact", sectionId: "contact" },
 ];

@@ -16,7 +16,7 @@ export function WhyChooseUs() {
     {
       icon: ShieldCheck,
       title: "Hygienic & Safe Kitchen",
-      desc: "FSSAI certified, sanitised kitchen aur safety standard ke sath packing. Health hamari prime priority hai.",
+      desc: "Ghar ki tarah clean, sanitised kitchen aur safety standard ke sath packing. Health hamari prime priority hai.",
     },
     {
       icon: PauseCircle,
@@ -31,7 +31,7 @@ export function WhyChooseUs() {
     {
       icon: PiggyBank,
       title: "Super Pocket Friendly",
-      desc: "Swiggy aur restaurants se 60% sasta. Quality home-cooked food starting at just ₹70 per meal.",
+      desc: "Swiggy aur restaurants se 60% sasta. Quality home-cooked food starting at just ₹75 per meal.",
     },
     {
       icon: RotateCw,

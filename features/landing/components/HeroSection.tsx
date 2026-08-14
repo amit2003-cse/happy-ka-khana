@@ -9,8 +9,6 @@ import {
   Clock,
   ShieldCheck,
   Star,
-  CheckCircle2,
-  CalendarRange,
   Truck,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -136,20 +134,6 @@ export function HeroSection() {
                       4.6/5
                     </span>
                   </div>
-                </div>
-              </div>
-
-              {/* Divider */}
-              <div className="hidden sm:block h-10 w-px bg-gray-200" />
-
-              {/* FSSAI Badge */}
-              <div className="flex items-center gap-2">
-                <div className="h-9 w-9 rounded-full bg-brand-secondary-light flex items-center justify-center">
-                  <CheckCircle2 className="h-5 w-5 text-brand-secondary" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-bold text-text-primary font-heading">FSSAI Certified Kitchen</span>
-                  <span className="text-xs text-text-secondary font-body">Health & Safety Assured</span>
                 </div>
               </div>
             </div>

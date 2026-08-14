@@ -1,6 +1,7 @@
 import { Navbar } from "@/features/landing/components/Navbar";
 import { HeroSection } from "@/features/landing/components/HeroSection";
 import { HowItWorks } from "@/features/landing/components/HowItWorks";
+import { WeeklyMenu } from "@/features/landing/components/WeeklyMenu";
 import { PricingPlans } from "@/features/landing/components/PricingPlans";
 import { WhyChooseUs } from "@/features/landing/components/WhyChooseUs";
 import { Testimonials } from "@/features/landing/components/Testimonials";
@@ -18,8 +19,9 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <HowItWorks />
-        <WhyChooseUs />
+        <WeeklyMenu />
         <PricingPlans />
+        <WhyChooseUs />
         <Testimonials />
         <DeliveryAreas />
         <FAQ />
