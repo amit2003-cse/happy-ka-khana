@@ -5,12 +5,16 @@ import { Check, AlertCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/Card";
 import { plansData } from "../data/plans-data";
 
 
 export function PricingPlans() {
+  const getWhatsAppUrl = (planName: string, price: number) => {
+    const text = `Hi! I want to order the ${planName} plan at ₹${price}. My name is ___ and my address is ___`;
+    return `https://wa.me/917488574616?text=${encodeURIComponent(text)}`;
+  };
+
   return (
     <section id="pricing" className="py-20 bg-surface-cream relative overflow-hidden">
       {/* Decorative vector background */}
@@ -101,12 +105,18 @@ export function PricingPlans() {
 
                 {/* Card Footer Action */}
                 <CardFooter className="pt-6 border-t-0">
-                  <Button
-                    variant={isMonthly ? "primary" : "outline"}
-                    className="w-full justify-center text-sm md:text-base py-3"
+                  <a
+                    href={getWhatsAppUrl(plan.name, plan.price)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full inline-flex items-center justify-center font-heading font-bold transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 active:scale-95 text-center text-sm md:text-base py-3 ${
+                      isMonthly
+                        ? "bg-brand-primary text-white hover:bg-brand-primary/90 focus:ring-brand-primary shadow-sm hover:shadow-md"
+                        : "border-2 border-brand-secondary/20 text-brand-secondary bg-transparent hover:bg-brand-secondary/5 focus:ring-brand-secondary"
+                    }`}
                   >
                     {plan.ctaText}
-                  </Button>
+                  </a>
                 </CardFooter>
               </Card>
             );

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { User, Utensils } from "lucide-react";
+import { Phone, Utensils } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const navLinks = [
@@ -81,16 +81,20 @@ export function Navbar() {
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-2 md:gap-3">
-            {/* Login — desktop only */}
-            <button className="hidden lg:flex items-center gap-2 px-5 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold font-heading text-text-primary hover:border-brand-secondary hover:text-brand-secondary transition-all duration-200">
-              <User className="h-4 w-4" />
-              Login
-            </button>
+            {/* Call Now — desktop only */}
+            <a
+              href="tel:7488574616"
+              className="hidden lg:flex items-center gap-2 px-5 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold font-heading text-text-primary hover:border-brand-secondary hover:text-brand-secondary transition-all duration-200"
+            >
+              <Phone className="h-4 w-4" />
+              Call Now: 7488574616
+            </a>
 
             {/* Order Now CTA — always visible, compact on mobile */}
             <a
-              href="#pricing"
-              onClick={(e) => scrollTo(e, "#pricing")}
+              href="https://wa.me/917488574616?text=Hi,%20I%20want%20to%20subscribe%20to%20Happy%20Ka%20Khana%20tiffin%20subscription."
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-brand-primary text-white text-xs md:text-sm font-bold font-heading hover:bg-brand-primary-hover transition-all duration-200 shadow-sm shadow-brand-primary/20 active:scale-95"
             >
               Order Now
