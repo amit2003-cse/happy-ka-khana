@@ -10,8 +10,10 @@ import {
   ShieldCheck,
   Star,
   Truck,
+  Utensils,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { weeklyMenuData } from "../data/menu-data";
 
 export function HeroSection() {
   const scrollTo = (targetId: string) => {
@@ -22,6 +24,25 @@ export function HeroSection() {
       window.scrollTo({ top, behavior: "smooth" });
     }
   };
+
+  const getTodayMenuPreview = () => {
+    try {
+      const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
+      const dayMenu = weeklyMenuData.find((d) => d.day === today) || weeklyMenuData[0];
+      const previewItems = dayMenu.lunch.filter(
+        (item) => !item.includes("Roti") && item !== "Salad" && item !== "Achar" && item !== "Papad"
+      );
+      return {
+        day: dayMenu.day,
+        preview: previewItems.slice(0, 3).join(" + ") + " & More",
+        isSpecial: dayMenu.isSpecial,
+      };
+    } catch (e) {
+      return { day: "Today", preview: "Ghar Jaisa Swad", isSpecial: false };
+    }
+  };
+
+  const todayMenu = getTodayMenuPreview();
 
   return (
     <section className="relative overflow-hidden bg-surface-light pt-6 pb-0">
@@ -175,6 +196,22 @@ export function HeroSection() {
               <p className="text-xl font-extrabold font-heading leading-tight">Patna</p>
               <p className="text-[10px] text-white/70 mt-1 leading-relaxed">
                 Kankarbagh • Boring Road • Rajendra Nagar • Bailey Road & Many More Areas
+              </p>
+            </div>
+
+            {/* Floating Card: Today's Menu Preview */}
+            <div className="absolute -left-4 top-1/3 lg:-left-10 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 max-w-[210px] animate-float z-10" style={{ animationDelay: "1.5s" }}>
+              <div className="flex items-center gap-2.5 mb-2">
+                <div className="h-8 w-8 rounded-xl bg-brand-primary/10 flex items-center justify-center shrink-0">
+                  <Utensils className="h-4.5 w-4.5 text-brand-primary" />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] text-text-light font-bold font-heading uppercase tracking-wider">Aaj Ka Menu</span>
+                  <span className="text-xs font-extrabold text-brand-secondary font-heading">{todayMenu.day} Special</span>
+                </div>
+              </div>
+              <p className="text-xs font-semibold text-text-primary font-body leading-relaxed border-t border-gray-50 pt-2">
+                {todayMenu.preview}
               </p>
             </div>
 
