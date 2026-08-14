@@ -80,7 +80,7 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-1">
               <button
-                onClick={() => scrollTo("#pricing")}
+                onClick={() => scrollTo("#menu")}
                 className="group flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-primary text-white text-base font-bold font-heading rounded-xl hover:bg-brand-primary-hover transition-all duration-200 shadow-lg shadow-brand-primary/20 active:scale-95"
               >
                 Order Now
