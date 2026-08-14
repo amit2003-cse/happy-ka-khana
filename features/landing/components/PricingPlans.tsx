@@ -11,7 +11,7 @@ import { plansData } from "../data/plans-data";
 
 export function PricingPlans() {
   const getWhatsAppUrl = (planName: string, price: number) => {
-    const text = `Hi! I want to order the ${planName} plan at ₹${price}. My name is ___ and my address is ___`;
+    const text = `Hi! I want to start the ${planName} at ₹${price}. My name is ___ and my address is ___`;
     return `https://wa.me/917488574616?text=${encodeURIComponent(text)}`;
   };
 
