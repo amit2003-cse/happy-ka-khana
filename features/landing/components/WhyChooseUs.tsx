@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Utensils, ShieldCheck, PauseCircle, Clock, PiggyBank, RotateCw } from "lucide-react";
+import { Utensils, ShieldCheck, PauseCircle, PiggyBank } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
@@ -24,19 +24,9 @@ export function WhyChooseUs() {
       desc: "Vacation pe ja rahe ho ya weekend pe? Ek click pe app se meal pause karein, no money waste.",
     },
     {
-      icon: Clock,
-      title: "On-Time Doorstep Delivery",
-      desc: "Hamare dedicated delivery partners roz subah aur shaam garam khana seedhe aap tak pahunchate hain.",
-    },
-    {
       icon: PiggyBank,
       title: "Super Pocket Friendly",
       desc: "Swiggy aur restaurants se 60% sasta. Quality home-cooked food starting at just ₹75 per meal.",
-    },
-    {
-      icon: RotateCw,
-      title: "Rotating Weekly Menu",
-      desc: "Daily monotony ko break karne ke liye har din naya menu. Mon to Sat variety khana, zero repetitions.",
     },
   ];
 
@@ -50,8 +40,8 @@ export function WhyChooseUs() {
           subtitle="Hum sirf khana nahi banate, ghar jaisa prem aur shuddhata aapke table tak deliver karte hain."
         />
 
-        {/* 3x2 Grid layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
+        {/* 2x2 Grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 max-w-4xl mx-auto">
           {trustPoints.map((point, index) => {
             const Icon = point.icon;
             return (
