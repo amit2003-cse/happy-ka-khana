@@ -19,8 +19,8 @@ export default function Home() {
         <HeroSection />
         <WeeklyMenu />
         <PricingPlans />
-        <WhyChooseUs />
         <Testimonials />
+        <WhyChooseUs />
         <DeliveryAreas />
         <FAQ />
       </main>
