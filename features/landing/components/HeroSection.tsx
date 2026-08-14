@@ -50,6 +50,13 @@ export function HeroSection() {
               <span className="text-brand-primary">Har Roz, Time Par!</span>
             </h1>
 
+            {/* Price Anchor */}
+            <div className="inline-flex items-center gap-1.5 bg-brand-primary/10 border border-brand-primary/20 px-3.5 py-1.5 rounded-xl">
+              <span className="text-xs font-bold font-heading text-brand-primary">
+                Starting at just <span className="font-extrabold text-brand-primary-hover">₹75 / meal</span>
+              </span>
+            </div>
+
             {/* Subheading */}
             <p className="text-base sm:text-lg text-text-secondary font-body max-w-lg leading-relaxed">
               Swadisht, hygienic aur nutritious ghar jaisa khana ab aapke ghar, PG ya office tak.
